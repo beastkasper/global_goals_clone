@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@1,100&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+
+}
+
+.root{
+  height: 100vh;
+  border:  #464 solid 1px;
+}
+.contener{
+  max-width: 1280px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  min-height: 100vh;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 128px;
+  outline: 1px solid black;
+}
+
+.img-wrap {
+  width: 250px;
+  height: 90px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-wrap img {
+  width: 60px;
+}
+.__h1__{
+  padding-left: 10px;
+  font-family: Antonio;
+  font-size: 25px;
+  font-weight: 900;
+  color: #1a1a1a;
+}
+.__p__{
+  font-size: 13px;
+  font-weight: 100;
+  font-style: normal;
+  font-family:'Times New Roman', Times, serif;
+  color: rgb(70, 67, 67);
+}
+
+.head__words{
+  padding: 10px;
+  font-family: Antonio;
+  font-size: 25px;
+}
+.block_words{
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+}
+
+.head__words:hover{
+  cursor: pointer;
+  background-color: rgb(212, 209, 209);
+}
+.text_block{
+  margin-top: 80px;
+  padding-left: 20px;
+  max-width: 39em;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #1a1a1a;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.mText{
+  
+  font-size: 52px;
+  font-weight: bold;
+  font-family: Antonio;
+}
+@media screen and (max-width:1100px) {
+  .head__words{ 
+    display: none;
+  }
+ .block_words{
+    max-width: 80px;
+    font-family: Antonio;
+    font-size: 12px;
+  }
+
+}
+@media screen and (min-width:1200px) {
+   ._menu_{
+    display: none;
+  }
+}
+@media screen and (max-width:600px) {
+  .text_block{
+    margin-top: 80px;
+    padding-left: 20px;
+    max-width: 36em;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #1a1a1a;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  }
+}
+.grid_block{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+ grid-auto-rows: 200px;
+}
+
+.global_css{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: Antonio;
+  color: white;
+  font-weight: 700; 
+  cursor: pointer;
+}
+  .qwe{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+  }
+  .h__1{
+    font-size:46px ;
+    margin-left: 10px;
+  }
+  .__p{
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+.goal1{
+  background-color: #E5243B;
+}
+.img_goals{
+  width: 140px;
+  height: 70px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.img_goals_bl{
+  width: 140px;
+  height: 70px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.img_goals_block{
+  width: 140px;
+  height: 70px;
+}
+.goal1:hover{
+  background-color: #dd1028;
+}
+.global_css:hover .img_goals_block {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.global_css:hover .img_goals {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.read_more_block.readMore{
+  background-color: #F1F1F1;
+  width: 100%;
+  height: 100%;
+  grid-column-start: 1 !important;
+  grid-column-end: 4 !important;
+  grid-row-start: 2 !important;
+  grid-row-end: 2 !important;
+}
+.read_more_block.readMore5{
+  background-color: #F1F1F1;
+  width: 100%;
+  height: 100%;
+  grid-column-start: 1 !important;
+  grid-column-end: 4 !important;
+  grid-row-start: 6 !important;
+  grid-row-end: 7 !important;
+}
+
+#video_block{
+  width: 100%;
+  height: 100%;
+  grid-column-start: 1 !important;
+  grid-column-end: 4 !important;
+  grid-row-start: 1 !important;
+  grid-row-end: 3 !important;
+}
+
+#video_block.grid1 {
+  grid-column-start: 1 !important;
+  grid-column-end: 4 !important;
+  grid-row-start: 4 !important;
+  grid-row-end: 6 !important;
+}
+
+#video_block.grid10 {
+  grid-column-start: 4 !important;
+  grid-column-end: 7 !important;
+  grid-row-start: 4 !important;
+  grid-row-end: 6 !important;
+}
+#video_block.grid5 {
+  grid-column-start: 1 !important;
+  grid-column-end: 4 !important;
+  grid-row-start: 3 !important;
+  grid-row-end: 5 !important;
+}
+#video_block.grid9 {
+  grid-column-start: 1 !important;
+  grid-column-end: 4 !important;
+  grid-row-start: 4 !important;
+  grid-row-end: 6 !important;
+}
+
+.goal2{
+  background-color: #DDA63A;
+}
+.goal2:hover{
+  background-color: #cf9a2f;
+}
+/* /////////////////////////// */
+.goal3{
+  background-color: #4C9F38;
+}
+.goal3:hover{
+  background-color: #348d1e;
+}
+/* /////////////////////////// */
+.goal4{
+  background-color: #C5192D;
+}
+.goal4:hover{
+  background-color: #bd162a;
+}
+/* /////////////////////////// */
+.goal5{
+  background-color: #FF3A21;
+}
+.goal5:hover{
+  background-color: #e93821;
+}
+/* /////////////////////////// */
+.goal6{
+  background-color: #26BDE2;
+}
+.goal6:hover{
+  background-color: #2baccc;
+}
+/* /////////////////////////// */
+.goal7{
+  background-color: #FCC30B;
+}
+.goal7:hover{
+  background-color: #f5c116;
+}
+/* /////////////////////////// */
+.goal8{
+  background-color: #A21942;
+}
+.goal8:hover{
+  background-color: #99113a;
+}
+/* /////////////////////////// */
+.goal9{
+  background-color: #FD6925;
+}
+.goal9:hover{
+  background-color: #FD6925;
+}
+/* /////////////////////////// */
+.goal10{
+  background-color: #DD1367;
+}
+.goal10:hover{
+  background-color: #DD1367;
+}
+/* /////////////////////////// */
+.goal11{
+  background-color: #FCC30B;
+}
+.goal11:hover{
+  background-color: #FCC30B;
+}
+/* /////////////////////////// */
+.goal12{
+  background-color: #BF8B2E;
+}
+.goal12:hover{
+  background-color: #BF8B2E;
+}
+/* /////////////////////////// */
+.goal13{
+  background-color: #3F7E44
+}
+.goal13:hover{
+  background-color: #3F7E44;
+}
+/* /////////////////////////// */
+.goal14{
+  background-color: #0A97D9;
+}
+.goal14:hover{
+  background-color: #0A97D9;
+}
+/* /////////////////////////// */
+.goal15{
+  background-color: #56C02B;
+}
+.goal15:hover{
+  background-color: #56C02B;
+}
+/* /////////////////////////// */
+.goal16{
+  background-color: #00689D;
+}
+.goal16:hover{
+  background-color: #00689D;
+}
+/* /////////////////////////// */
+.goal17{
+  background-color: #19486A;
+}
+.goal17:hover{
+  background-color: #19486A;
+}
+
+@media screen and (max-width:1100px) {
+  .grid_block{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+   grid-auto-rows: 200px;
+  }
+}
+@media screen and (max-width:1000px) {
+  .grid_block{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+   grid-auto-rows: 200px;
+  }
+}
+@media screen and (max-width:800px) {
+  .grid_block{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+   grid-auto-rows: 200px;
+  }
+}
+@media screen and (max-width:600px) {
+  .grid_block{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+   
+  }
+}
+@media screen and (max-width:400px) {
+  .grid_block{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+   margin-left: 70px;
+  }
+}
+
+
+
+.goal1.active{
+  width: 100%;
+  height: 100%;
+  grid-column-start: 1 !important;
+  grid-column-end: 4 !important;
+  grid-row-start: 1 !important;
+  grid-row-end: 3 !important;
+}
+.goal2.active{
+  width: 100%;
+  height: 100%;
+  grid-column-start: 2 !important;
+  grid-column-end: 4 !important;
+  grid-row-start: 1 !important;
+  grid-row-end: 4 !important;
+}
+.goal3.active{
+  width: 100%;
+  height: 100%;
+  grid-column-start: 3 !important;
+  grid-column-end: 6 !important;
+  grid-row-start: 1 !important;
+  grid-row-end: 3 !important;
+}
+.goal4.active{
+  width: 100%;
+  height: 100%;
+  grid-column-start: 4 !important;
+  grid-column-end: 6 !important;
+  grid-row-start: 1 !important;
+  grid-row-end: 4 !important;
+}
+.goal5.active{
+   width: 100%;
+  height: 100%;
+  grid-column-start: 5 !important;
+  grid-column-end: 7 !important;
+  grid-row-start: 1 !important;
+  grid-row-end: 4 !important;
+}
+.goal6.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 5 !important;
+ grid-column-end: 7 !important;
+ grid-row-start: 2 !important;
+ grid-row-end: 5 !important;
+}
+.goal7.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 1 !important;
+ grid-column-end: 3 !important;
+ grid-row-start: 2 !important;
+ grid-row-end: 5 !important;
+}
+.goal8.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 1 !important;
+ grid-column-end: 3 !important;
+ grid-row-start: 3 !important;
+ grid-row-end: 6 !important;
+}
+.goal9.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 3 !important;
+ grid-column-end: 6 !important;
+ grid-row-start: 2 !important;
+ grid-row-end: 4 !important;
+}
+
+.goal10.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 4 !important;
+ grid-column-end: 7 !important;
+ grid-row-start: 2 !important;
+ grid-row-end: 4 !important;
+}
+.goal11.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 1 !important;
+ grid-column-end: 3 !important;
+ grid-row-start: 3 !important;
+ grid-row-end: 6 !important;
+}
+.goal12.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 5 !important;
+ grid-column-end: 7 !important;
+ grid-row-start: 3 !important;
+ grid-row-end: 6 !important;
+}
+.goal13.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 5 !important;
+ grid-column-end: 7 !important;
+ grid-row-start: 3 !important;
+ grid-row-end: 6 !important;
+}
+.goal14.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 4 !important;
+ grid-column-end: 7 !important;
+ grid-row-start: 5 !important;
+ grid-row-end: 7 !important;
+}
+.goal15.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 3 !important;
+ grid-column-end: 6 !important;
+ grid-row-start: 5 !important;
+ grid-row-end: 7 !important;
+}
+.goal16.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 5 !important;
+ grid-column-end: 7 !important;
+ grid-row-start: 4 !important;
+ grid-row-end: 7 !important;
+}
+.goal17.active{
+  width: 100%;
+ height: 100%;
+ grid-column-start: 4 !important;
+ grid-column-end: 7 !important;
+ grid-row-start: 4 !important;
+ grid-row-end: 6 !important;
+}
